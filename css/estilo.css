@@ -49,10 +49,8 @@ h3{
     font-family: 'Bebas Neue', cursive;
     color: white;
     text-decoration: none;
-    text-align: center;
+    text-align: center;   
 }
-
-
 
 /*Fin de clases recicladas*/
 
@@ -303,6 +301,16 @@ footer{
     height: 300px;
 }
 
+.sedes__animadas{
+    display: flex;
+    transition: all 500ms ease;
+    border-radius: 5px;
+    box-shadow: 1px 10px 15px rgba (0,0,0,0.50);
+}
+
+.sedes__animadas :hover{
+    transform: scale(1.2);
+}
 /* Fin de sedes */
 
 /* Inicio de programas */
