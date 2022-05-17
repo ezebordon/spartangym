@@ -11,12 +11,12 @@ li{
     list-style: none;
 }
 
-h1{
+/* h1{
     padding: 2px;
     margin: 2px;
     font-size: 40px;
     font-family: 'Tapestry', cursive;
-}
+} */
 
 h2{
     font-size: 30px;
@@ -39,7 +39,7 @@ h3{
 
 /* Clase para crear un boton */
 
-.btn{
+.btncss{
     display: inline-block;
     padding: 5px 10px;
     margin: 5px;

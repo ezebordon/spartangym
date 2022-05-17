@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpartanGym</title>
     <link rel="icon" type="image" sizes="16x16" href="recursos/logo.png" alt="logo">    
-   <!--  <link rel="stylesheet" href="css/estilo.css"> -->
+    <link rel="stylesheet" href="css/estilo.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Tapestry&display=swap" rel="stylesheet">
@@ -51,40 +51,41 @@
       </nav>
      <!--         Final del header. -->
     </header>
-    <main class="container">
-     <!--    Inicio del main, contiene el contenido principal de la página. -->        
-        <div class="articulo__1 grid">
-            <img class="img-fluid" src="recursos/index-imagen-principal.jpg" alt="Dibujo de hombre musculoso">
-            <h1 class="articulo__titulo">¿Queres aprender mas?</h1>
-            <a class="articulo__1Items btn" href="pages/contacto.html"><!-- ¿Queres aprender mas? --> ¡Contactanos!</a>
+    <main>
+     <!--    Inicio del main, contiene el contenido principal de la página. -->    
+      <section class="container g-3 mb-3">     
+        <div class="card bg-dark text-white">
+            <img src="recursos/index-imagen-principal.jpg" class="card-img" alt="Dibujo de hombre musculoso">
+            <div class="card-img-overlay">
+              <h1 class="card-body text-center">¿Aún tenes dudas?</h1>            
+              <div class="card-body text-center">
+                <a class="btn btn-danger" href="pages/contacto.html">¡ANOTATE YA!</a>
+              </div>
+          </div>
         </div>
-        
-        <section class="articulo__2">
-            <div class="articulo__2Img">
-                <img class="img-fluid" src="recursos/index-quienes-somos.jpg" alt="Imagen de pesa">
-                <a class="btn articulo__2ImgItem" href="pages/nosotros.html">Conoce a nuestro equipo</a> 
+      </section>
+
+      <section class="container">
+        <div class="card mb-3"  style="max-width: 1080px;">
+          <div class="row g-0 d-flex align-items-center">
+            <div class="col-md-8">
+              <img src="recursos/index-quienes-somos.jpg" class="img-fluid rounded-start" alt="Imagen de pesas"> 
             </div>
+            <div class="col-md-4 text-center">
+              <div class="card-body">
+                <h5 class="card-title h1">¿Quiénes somos?</h5>
+                <p class="card-text">Somos un equipo de profesionales enfocados en el mundo del fitness. Con una gran trayectoria a lo largo de los años y con los mas experimentados en el tema.</p>
+                <p class="card-text"><small class="text-muted">Con mas de 10 años de experiencia.</small></p>
+                <div class="card-body text-center">  
+                  <a class="btn btn-danger"href="pages/nosotros.html">Conoce a nuestro equipo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
             
-            <div class="grid">
-                <h1>¿Quienes somos?</h1>
-                <p class="textos">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sed optio molestiae necessitatibus soluta
-                    quos praesentium, excepturi doloremque rerum distinctio numquam placeat, quisquam non voluptatum, maxime
-                    consequuntur aliquid dolores illo?
-                    Molestias hic, fugiat itaque inventore minus eos ducimus voluptatum voluptatibus amet explicabo
-                    accusantium error consequuntur earum exercitationem rem deleniti ut libero eveniet, adipisci veniam
-                    suscipit cum doloribus dolores enim! Incidunt?
-                    Ex officia cumque delectus incidunt esse iure eveniet obcaecati harum corporis sunt ullam hic omnis
-                    commodi, accusamus ut unde totam fugit nesciunt in eum voluptatum exercitationem quos. Et, non optio!
-                    Facilis deserunt debitis hic quidem recusandae, quo corporis soluta sunt ipsum totam nihil ipsa eos
-                    laudantium blanditiis excepturi incidunt! Nobis magni at voluptas corporis doloremque aliquam atque
-                    incidunt repellendus esse.
-                    Repellendus totam ut, ratione corporis, similique amet vitae natus perspiciatis esse, aspernatur
-                    explicabo commodi dolorem voluptatem. Quod facere at laudantium, quae unde delectus aliquam, sapiente
-                    optio voluptas culpa odio illum?
-                </p>
-            </div>            
-        </section>
+
      <!--     Fin del main. -->    
     </main>
 
