@@ -2,133 +2,139 @@
 <html lang="es">
 
 <head>
-    <!-- Inicio del head, contiene titulo de la página + imagen de pestaña + google fonts y se linkea con archivo css. -->  
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Nosotros!</title>
-    <link rel="icon" type="image" sizes="16x16" href="../recursos/logo.png" alt="logo">
-    <link rel="stylesheet" href="../css/estilo.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Tapestry&display=swap" rel="stylesheet">
-    <!-- Fin del head. -->
+  <!-- Inicio del head, contiene titulo de la página + imagen de pestaña + google fonts y se linkea con archivo css. -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¡Nosotros!</title>
+  <link rel="icon" type="image" sizes="16x16" href="../recursos/logo.png" alt="logo">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Permanent+Marker&display=swap"
+    rel="stylesheet">
+  <!-- Fin del head. -->
 </head>
 
 <body>
- <!-- Inicio del body. -->
-    <header> 
+  <!-- Inicio del body. -->
+  <header>
     <!--     Comienzo del header, contiene nav + logo de pagina que redirige al inicio. -->
     <nav class="navbar navbar-expand-lg bg-danger m-3">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">
-              <img src="../recursos/logo-index.png" alt="Logo del gimnasio" width="100px" height="100px">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active link-light " aria-current="page" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link link-light" href="../pages/contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link link-light" href="../pages/sedes.html">Sedes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link link-light" href="../pages/programas.html">Programas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link link-light" href="../pages/nosotros.html">Nosotros</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../recursos/logo-index.png" alt="Logo del gimnasio" width="100px" height="100px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active link-light" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="../pages/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="../pages/sedes.html">Sedes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="../pages/programas.html">Programas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="../pages/nosotros.html">Nosotros</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
     <!--         Final del header. -->
-   </header>
-   
-   <section class="container">
-    <!-- Inicio del titular + subtitulo. -->    
-       <h1>Conoce a nuestro equipo de trabajo.</h1>
-       <h2>Contamos con los mejores y mas experimentados.</h2>
+  </header>
+
+  <section class="container">
+    <!-- Inicio del titular + subtitulo. -->
+    <h1 class="titulos text-center">Conoce a nuestro equipo de trabajo.</h1>
+    <h2 class="textos text-center mb-3">Contamos con los mejores y mas experimentados.</h2>
     <!-- Fin del titular + subtitulo. -->
-   </section>
+  </section>
 
-   <div class="container">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="../recursos/nosotros-personal-trainer-uno.jpg" class="card-img-top" alt="Personal trainer 1">
-            <div class="card-body">
-              <h5 class="card-title">Personal trainer uno</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error consectetur laborum distinctio nisi ex blanditiis sed, quibusdam tenetur veniam dolorum molestiae laudantium sint voluptas modi eligendi voluptatem excepturi! Dolorum, aperiam.</p>
-            </div>
+  <div class="container">
+    
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="../recursos/nosotros-personal-trainer-uno.jpg" class="card-img-top" alt="Personal trainer Patricio Zhang">
+          <div class="card-body">
+            <h5 class="card-title textos text-center">Patricio Zhang</h5>
+            <p class="card-text text-center textos">Entrenador número uno de musculación, trabajo con varios fisico culturistas conocidos a nivel mundial. Si lo que buscas es un cambio físico centrado en el entrenamiento de pesas y ejercicios aislados o de multiple articulación, encontraste a la persona ideal.</p>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="../recursos/nosotros-personal-trainer-dos.jpg" class="card-img-top" alt="Personal trainer 2">
-            <div class="card-body">
-              <h5 class="card-title">Personal trainer dos</h5>
-              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, fugit libero reprehenderit consequatur quaerat fugiat porro perferendis ad laborum earum nam voluptatem ea beatae magnam omnis dolorem veritatis nesciunt harum.</p>
-            </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../recursos/nosotros-personal-trainer-dos.jpg" class="card-img-top" alt="Personal trainer Sergio Lloren">
+          <div class="card-body">
+            <h5 class="card-title textos text-center">Sergio Llorens</h5>
+            <p class="card-text text-center textos">Conocido a gran escala como uno de los mejores entrenadores de calistenia. Crea rutinas enfocadas a tus objetivos, cuenta con numerosas dietas para los objetivos que vos quieras. Si lo que estas buscando es aumentar tu fuerza y un entrenamiendo en base a tu peso corporal, estas enfrente de la persona ideal.</p>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="../recursos/nosotros-personal-trainer-tres.jpg" class="card-img-top" alt="Personal trainer 3">
-            <div class="card-body">
-              <h5 class="card-title">Personal trainer tres</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aliquid quod nisi in possimus rerum voluptas nobis ad vitae, animi, explicabo nemo, eaque distinctio commodi facilis ipsum nulla adipisci. Iusto?</p>
-            </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../recursos/nosotros-personal-trainer-tres.jpg" class="card-img-top" alt="Personal trainer Jose Angel Calderon">
+          <div class="card-body">
+            <h5 class="card-title textos text-center">Jose Angel Calderon</h5>
+            <p class="card-text textos text-center">Con su enfoque en el crossfit, Jose Angel Calderon logro grandes titulos a nivel mundial, sus rutinas son altamente personalizables y cuenta con multiples conocimientos enfocado en la fuerza personal.</p>
           </div>
         </div>
       </div>
     </div>
-   <div class="container">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="../recursos/nosotros-personal-trainer-cuatro.jpg" class="card-img-top" alt="Personal trainer 4">
-            <div class="card-body">
-              <h5 class="card-title">Personal trainer cuatro</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error consectetur laborum distinctio nisi ex blanditiis sed, quibusdam tenetur veniam dolorum molestiae laudantium sint voluptas modi eligendi voluptatem excepturi! Dolorum, aperiam.</p>
-            </div>
+  </div>
+  <div class="container mt-3 mb-3">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="../recursos/nosotros-personal-trainer-cuatro.jpg" class="card-img-top" alt="Personal trainer Amelia Echeverria">
+          <div class="card-body">
+            <h5 class="card-title text-center textos">Amelia Echeverria</h5>
+            <p class="card-text textos text-center">Creadora de contenido y personal trainer, Amelia se enfoca en los entrenamiendos cardiovaculares para lograr una buena definición en tu cuerpo, resultados rapidos y eficaces, no dudes en contactarla.</p>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="../recursos/nosotros-nutricionista-uno.jpg" class="card-img-top" alt="Nutricionista 1">
-            <div class="card-body">
-              <h5 class="card-title">Nutricionista uno</h5>
-              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, fugit libero reprehenderit consequatur quaerat fugiat porro perferendis ad laborum earum nam voluptatem ea beatae magnam omnis dolorem veritatis nesciunt harum.</p>
-            </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../recursos/nosotros-nutricionista-uno.jpg" class="card-img-top" alt="Nutricionista Claudio Nieves">
+          <div class="card-body">
+            <h5 class="card-title text-center textos">Claudio Nieves</h5>
+            <p class="card-text text-center textos">Nutricionista número uno de nuestro pais. Claudio Nieves se graduo en la UBA, se especializa en la nutrición deportiva y te acompañara en el proceso de tu cambio físico.</p>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="../recursos/nosotros-nutricionista-dos.jpg" class="card-img-top" alt="Nutricionista 2">
-            <div class="card-body">
-              <h5 class="card-title">Nutricionista dos</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aliquid quod nisi in possimus rerum voluptas nobis ad vitae, animi, explicabo nemo, eaque distinctio commodi facilis ipsum nulla adipisci. Iusto?</p>
-            </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../recursos/nosotros-nutricionista-dos.jpg" class="card-img-top" alt="Nutricionista Erica Castellano">
+          <div class="card-body">
+            <h5 class="card-title textos text-center">Erica Castellano</h5>
+            <p class="card-text text-center textos">Nuestra nutricionista Erica Castellano, también graduada en la UBA cuenta con numerosas dietas y recetas para que tu proceso en el cambio fisico que quieras realizar no sea tan dificil.</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <footer>
-        <!--     Inicio del footer. -->         
-        <p>Somos guerreros, no pain, no gain.</p>
-        <!--     Fin del footer. -->
-    </footer>
+  <footer>
+    <!--     Inicio del footer. -->
+    <p>Somos guerreros, no pain, no gain.</p>
+    <!--     Fin del footer. -->
+  </footer>
 
- <!-- Fin del body. --> 
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <!-- Fin del body. -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

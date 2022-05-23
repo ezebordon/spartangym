@@ -7,62 +7,22 @@
 
 /*Comienzo de clases recicladas*/
 
-li{
-    list-style: none;
-}
-
-/* h1{
-    padding: 2px;
-    margin: 2px;
-    font-size: 40px;
-    font-family: 'Tapestry', cursive;
-} */
-
-h2{
-    font-size: 30px;
-    font-family: 'Tapestry', cursive;
-    color: rgb(253, 254, 255);
-}
-
-h3{
-    font-size: 25px;
-    font-family: 'Tapestry', cursive;
-    color: red;
-}
 
 .textos{
     padding: 2px;
     margin: 2px;
-    font-size: 20px;
-    font-family: 'Tapestry', cursive;
+    font-family: 'Koulen', cursive;
 }
 
-/* Clase para crear un boton */
-
-.btncss{
-    display: inline-block;
-    padding: 5px 10px;
-    margin: 5px;
-    border: 1px inset rgb(138, 131, 131);
-    background-color: rgb(238, 95, 95);
-    font-size: 30px;
-    font-family: 'Bebas Neue', cursive;
-    color: white;
-    text-decoration: none;
-    text-align: center;   
+.titulos{
+    padding: 2px;
+    margin: 2px;
+    font-family:'Koulen', cursive;
+    font-size: 34px;
+    color: rgb(192, 42, 42);
 }
 
 /*Fin de clases recicladas*/
-
-/* Estilo para todos los body de la página. */
-
-body{
-    padding: 5px;
-    margin: 5px;
-    background-color: rgba(204, 203, 203, 0.733);
-}
-
-/* Fin del estilo para los body de la página. */
 
 /* Estilo para todos los footer de la página */
 
@@ -78,130 +38,7 @@ footer{
 
 
 
-/* Comienzo del index */
-
-.articulo__1{
-    display: grid;
-    grid-template-areas:    "articulo__titulo"
-                            "articulo__1Items";
-    padding: 3px;
-    margin: 5px 10px 5px 10px;
-    align-items: center;
-    justify-items: center;
-}
-
-.articulo__1Items{
-    grid-area: articulo__1Items;
-}
-
-.articulo__2{
-    display: grid;
-    grid-template-areas: "articulo__2Img articulo__2Desc";
-}
-
-.articulo__2Img{
-    grid-area: articulo__2Img;
-    display: grid;
-    grid-template-areas: "articulo__2ImgItem";
-    align-items: center;
-    justify-items: center;
-    padding: 5px;
-    margin: 5px;
-}
-
-.articulo__2ImgItem{
-    grid-area: articulo__2ImgItem;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-
-
-.articulo__2Desc{
-    grid-area: articulo__2Desc;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    margin: 5px;
-    padding: 2px;
-}
-
-
-
-/* Fin del index. */
-
 /* Inicio contato. */
-
-.contacto__h1{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.contacto__grid{
-    display: grid;
-    grid-template-areas: "contacto__grid1 contacto__grid2";
-    gap: 10px;
-    padding: 5px;
-    margin: 3px;
-}
-
-.contacto__grid1{
-    grid-area: contacto__grid1;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.contacto__grid2{
-    grid-area: contacto__grid2;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contacto__imagen{
-    width: 900px;
-    height: 500px;
-}
-
-.contacto__formulario{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 10px;
-    border: 2px solid white;
-    border-radius: 5px;
-    background-image: url(../recursos/contacto-imagen-formulario.png);
-    background-position: center;
-    background-size: contain;
-    font-size: 50px;
-    font-family: 'Bebas Neue', cursive;
-    color: rgb(0, 0, 0);
-    display: flex;
-}
-
-.contacto__formularioCajas{
-    padding-top: 25px;
-    width: 200px;
-    height: 20px;
-    border: 3px double rgb(253, 0, 0) ;
-    border-radius: 5px; 
-}
-
-.contacto__consultas{
-    width: 804px;
-    height: 160px;
-    border-radius: 5px;
-    resize: none;
-    border: 3px double rgb(253, 0, 0) ;
-    border-radius: 5px; 
-}
 
 .contacto__redes{
     display: flex;
@@ -219,51 +56,6 @@ footer{
 
 /* Inicio sedes */
 
-.sedes{
-    display: grid;
-    grid-template-areas: "sedes__mapa sedes__mapa sedes__img1"
-                        "sedes__mapa sedes__mapa sedes__img2"
-                        "sedes__mapa sedes__mapa sedes__img3"
-                        "sedes__texto sedes__texto sedes__texto";
-                        gap: 5px;
-}
-
-.sedes__h1{
-    display: flex;
-    justify-content: center;
-}
-
-.sedes__mapa{
-    grid-area: sedes__mapa;
-}
-
-
-.sedes__texto{
-    grid-area: sedes__texto;
-    padding: 2px;
-    margin: 2px;
-    font-size: 15px;
-    font-family: 'Tapestry', cursive;
-}
-
-.sedes__img1{
-    grid-area: sedes__img1;
-    width: 400px;
-    height: 300px;
-}
-
-.sedes__img2{
-    grid-area: sedes__img2;
-    width: 400px;
-    height: 300px;
-}
-
-.sedes__img3{
-    grid-area: sedes__img3;
-    width: 400px;
-    height: 300px;
-}
-
 .sedes__animadas{
     display: flex;
     transition: all 500ms ease;
@@ -276,336 +68,53 @@ footer{
 }
 /* Fin de sedes */
 
-/* Inicio de programas */
-
-.programas{
-    padding: 10px;
-    margin: 5px;
-    border: solid 4px red;
-    width: 500px;
-    height: 500px;
-}
-
-.programas__imagenes{
-    width: 500px;
-    height: 300px;
-}
-
-.programas__videos{
-    padding-left: 10px;
-    width: 500px;
-    height: 300px;
-}
-
-/*Fin sedes */
-
-/* Inicio nosotros */
-
-.nosotros{
-    padding: 5px;
-    margin: 5px;
-    width: 500px;
-    height: 600px;
-    text-align: center;
-}
-
-.nosotros__imagenes{
-    width: 500px;
-    height: 400px;
-}
-
-
-/*Fin de nosotros*/
-
-/* Inicio media query tablet */
+/*Inicio media query tablet*/
 
 @media (min-width: 541px) and (max-width: 720px){
-    
-    body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px
-    }
 
-    /*Header + nav*/
+    /* Comienzo de clases para textos y titulos */
 
-    header{
-        max-width: 541px;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin-right: 5px;
-        margin-left: 5px;
+    .titulos{
+        font-size: 1.3rem;
     }
     
-    .header__nav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+    .textos{
+        font-size: 1rem;
+        font-family: 'Koulen', cursive;
     }
 
-    /*Inicio index tablet*/
-
-    main{
-        display: grid;
-        grid-template-areas: "articulo__1"
-                            "articulo__2";
-        justify-content: center;                    
+     p{
+        font-size: small;
     }
 
-    .articulo__1Items{
-        max-width: 541px;
-        margin: 5px 0;
-    }
-
-    .articulo__2ImgItem{
-        max-width: 541px;
-    }
+      /* Fin de clases para textos y titulos */
     
-    .articulo__2{
-        display: grid;
-        margin: 5px 0;
-        grid-template-areas: "articulo__2Img"
-                            "articulo__2Desc";
-        justify-items: center;
-    }
-
-    .articulo__2Desc{
-        max-width: 541px;
-    }
-
-    /*Fin Index tablet*/
-
-    /*Inicio contacto tablet*/
-    
-    
-    .contacto__grid{
-        display: grid;
-        grid-template-areas: "contacto__grid1"
-                            "contacto__grid2";
-    }
-
-    .contacto__grid1{
-        grid-area: contacto__grid1;
-        max-width: 541px;
-        
-    }
-
-    .contacto__imagen{
-        max-width: 541px;
-    }
-
-    .contacto__grid2{
-        grid-area: contacto__grid2;
-        max-width: 541px;
-    }
-
-    .contacto__formulario{
-        max-width: 541px;
-        display: grid;
-        grid-template-areas: "form__nombre"
-                            "form__apellido"
-                            "form__correo"
-                            "form__telefono"
-                            "form__consulta";
-        padding: 5px;
-        margin: 2px;                    
-        background-position: center;
-        background-size: contain;
-    }
-
-    .form__nombre{
-        grid-area: form__nombre;
-    }
-
-    .form__apellido{
-        grid-area: form__apellido;
-    }
-
-    .form__correo{
-        grid-area: form__correo;
-    }
-
-    .form__telefono{
-        grid-area: form__telefono;
-    }
-
-    .form__consulta{
-        grid-area: form__consulta;
-    }
-
-
-    .contacto__consultas{
-        max-width: 541px;
-    }
-
-    /*Fin contacto tablet*/
-
-    /*Inicio sedes tablet*/
-
-    .sedes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .sedes__mapa{
-        display: flex;
-        justify-content: center;
-    }
-    
-    .sedes__imgMap{
-        width: 90%;
-        max-width: 541px;
-    }
-    
-    /*Fin sedes tablet*/
 }
 
+/* Fin media query tablet */
 
 /*Inicio media query mobile*/
 
 @media (min-width: 320px) and (max-width: 540px){
-    body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 10px
-    }
 
-    header{
-        max-width: 320px;
-        padding-left: 5px;
-        padding-right: 5px;
-        margin-right: 5px;
-        margin-left: 5px;
+     /* Comienzo de clases para textos y titulos */
+
+    .titulos{
+        font-size: 1rem;
     }
     
-    .header__nav{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    /*Inicio index*/
-
-    main{
-        display: grid;
-        grid-template-areas: "articulo__1"
-                            "articulo__2";
-    }
-
-    .articulo__1Items{
-        max-width: 320px;
-        margin: 5px 0;
-    }
-
-    .articulo__2ImgItem{
-        max-width: 320px;
-    }
+    .textos{
+        font-size: 1rem;
+    }     
+   
+    /* Fin de clases para textos y titulos */
     
-    .articulo__2{
-        display: grid;
-        margin: 5px 0;
-        grid-template-areas: "articulo__2Img"
-                            "articulo__2Desc";
-        justify-items: center;
-    }
-
-    .articulo__2Desc{
-        max-width: 320px;
-    }
-
-    /* Fin index mobile*/
+    /*Inicio contacto*/
     
-    /*Inicio contacto mobile*/
-
-    .contacto__grid{
-        display: grid;
-        max-width: 320px;
-        grid-template-areas: "contacto__grid1"
-                            "contacto__grid2";
-    }
-
-    .contacto__grid1{
-        grid-area: contacto__grid1;
-        max-width: 320px;
-        
-    }
-
-    .contacto__imagen{
-        width: 200px;
-        height: 100px;
-        max-width: 320px;
-    }
-
-    .contacto__grid2{
-        grid-area: contacto__grid2;
-        max-width: 320px;
-    }
-
-    .contacto__formulario{
-        max-width: 320px;
-        display: grid;
-        justify-items: center;
-        font-size: 20px;
-        grid-template-areas: "form__nombre"
-                            "form__apellido"
-                            "form__correo"
-                            "form__telefono"
-                            "form__consulta";
-        padding: 2px;
-        margin: 2px;                    
-        background-position: center;
-        background-size: contain;
-    }
-
-    .form__nombre{
-        grid-area: form__nombre;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .form__apellido{
-        grid-area: form__apellido;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .form__correo{
-        grid-area: form__correo;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .form__telefono{
-        grid-area: form__telefono;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .form__consulta{
-        grid-area: form__consulta;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-
-    .contacto__consultas{
-        width: 200px;
-        height: 100px;        
-    } 
-
     .contacto__redes{
         display: flex;
         flex-direction: column;
+        align-items: center;
         max-width: 320px;
 
     }
@@ -613,46 +122,17 @@ footer{
     .contacto__logosRedes{
         max-width: 320px;
     }
-    
-    /*Fin contacto mobile*/
 
-    /*Inicio sedes mobile*/
-    .sedes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 320px;
-    }
-    
-    .sedes__mapa{
-        display: flex;
-        justify-content: center;
-    }
+    /* Fin contacto */
 
-    .sedes__img1{
-        width: 90%;
-        max-width: 320px;
-    }
-
-    .sedes__img2{
-        width: 90%;
-        max-width: 320px;
-    }
-
-    .sedes__img3{
-        width: 90%;
-        max-width: 320px;
-    }
-    
-    .sedes__imgMap{
-        width: 90%;
-        max-width: 320px;
-    }
-    
-    /*Fin desdes mobile*/
-
-    
 }
+
+/* Fin media query mobile */
+
+
+
+
+
 
 
 
