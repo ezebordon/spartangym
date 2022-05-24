@@ -1,147 +1,79 @@
+@charset "UTF-8";
 /* Inicio del código con un reset */
-
-*{
-    margin: 0px;
-    padding: 0px;
-}
+* {
+  margin: 0px;
+  padding: 0px; }
 
 /*Comienzo de clases recicladas*/
+.textos {
+  padding: 2px;
+  margin: 2px;
+  font-family: 'Koulen', cursive; }
 
-
-.textos{
-    padding: 2px;
-    margin: 2px;
-    font-family: 'Koulen', cursive;
-}
-
-.titulos{
-    padding: 2px;
-    margin: 2px;
-    font-family:'Koulen', cursive;
-    font-size: 34px;
-    color: rgb(192, 42, 42);
-}
+.titulos {
+  padding: 2px;
+  margin: 2px;
+  font-family: 'Koulen', cursive;
+  font-size: 34px;
+  color: #c02a2a; }
 
 /*Fin de clases recicladas*/
-
 /* Estilo para todos los footer de la página */
-
-footer{
-    font-size: 15px;
-    color: rgb(173, 18, 18);
-    font-family: 'Permanent Marker', cursive;
-    display: flex;
-    justify-content: center;
-}
+footer {
+  font-size: 15px;
+  color: #ad1212;
+  font-family: 'Permanent Marker', cursive;
+  display: flex;
+  justify-content: center; }
 
 /* Fin del estilo para el footer. */
-
-
-
 /* Inicio contato. */
-
-.contacto__redes{
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.contacto__logosRedes{
+.contacto__redes {
+  display: flex;
+  justify-content: space-around; }
+  .contacto__redes .contacto__logosRedes {
     padding: 10px;
     width: 100px;
-    height: 100px;
-}
+    height: 100px; }
 
 /* Fin de contacto*/
-
 /* Inicio sedes */
+.sedes__animadas {
+  display: flex;
+  transition: all 500ms ease;
+  border-radius: 5px;
+  box-shadow: 1px 10px 15px rgba 0, 0, 0, 0.5; }
+  .sedes__animadas:hover {
+    transform: scale(1.2); }
 
-.sedes__animadas{
-    display: flex;
-    transition: all 500ms ease;
-    border-radius: 5px;
-    box-shadow: 1px 10px 15px rgba (0,0,0,0.50);
-}
-
-.sedes__animadas :hover{
-    transform: scale(1.2);
-}
 /* Fin de sedes */
-
 /*Inicio media query tablet*/
-
-@media (min-width: 541px) and (max-width: 720px){
-
-    /* Comienzo de clases para textos y titulos */
-
-    .titulos{
-        font-size: 1.3rem;
-    }
-    
-    .textos{
-        font-size: 1rem;
-        font-family: 'Koulen', cursive;
-    }
-
-     p{
-        font-size: small;
-    }
-
-      /* Fin de clases para textos y titulos */
-    
-}
+@media (min-width: 541px) and (max-width: 720px) {
+  /* Comienzo de clases para textos y titulos */
+  .titulos {
+    font-size: 1.3rem; }
+  .textos {
+    font-size: 1rem;
+    font-family: 'Koulen', cursive; }
+  /* Fin de clases para textos y titulos */ }
 
 /* Fin media query tablet */
-
 /*Inicio media query mobile*/
-
-@media (min-width: 320px) and (max-width: 540px){
-
-     /* Comienzo de clases para textos y titulos */
-
-    .titulos{
-        font-size: 1rem;
-    }
-    
-    .textos{
-        font-size: 1rem;
-    }     
-   
-    /* Fin de clases para textos y titulos */
-    
-    /*Inicio contacto*/
-    
-    .contacto__redes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 320px;
-
-    }
-
-    .contacto__logosRedes{
-        max-width: 320px;
-    }
-
-    /* Fin contacto */
-
-}
+@media (min-width: 320px) and (max-width: 540px) {
+  /* Comienzo de clases para textos y titulos */
+  .titulos {
+    font-size: 1rem; }
+  .textos {
+    font-size: 1rem; }
+  /* Fin de clases para textos y titulos */
+  /*Inicio contacto*/
+  .contacto__redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px; }
+    .contacto__redes .contacto__logosRedes {
+      max-width: 320px; }
+  /* Fin contacto */ }
 
 /* Fin media query mobile */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

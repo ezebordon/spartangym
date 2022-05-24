@@ -1,0 +1,133 @@
+@import '_variables';
+
+
+
+
+/* Inicio del código con un reset */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Comienzo de clases recicladas*/
+
+
+.textos{
+    padding: 2px;
+    margin: 2px;
+    font-family: 'Koulen', cursive;
+}
+
+.titulos{
+    padding: 2px;
+    margin: 2px;
+    font-family:'Koulen', cursive;
+    font-size: 34px;
+    color: $color-de-titulos
+    
+}
+
+/*Fin de clases recicladas*/
+
+/* Estilo para todos los footer de la página */
+
+footer{
+    font-size: 15px;
+    color: $color-de-footer;
+    font-family: 'Permanent Marker', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+/* Fin del estilo para el footer. */
+
+
+
+/* Inicio contato. */
+
+.contacto__redes{
+    display: flex;
+    justify-content: space-around;
+
+    .contacto__logosRedes{
+        padding: 10px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+/* Fin de contacto*/
+
+/* Inicio sedes */
+
+.sedes__animadas{
+    display: flex;
+    transition: all 500ms ease;
+    border-radius: 5px;
+    box-shadow: 1px 10px 15px rgba (0,0,0,0.50);
+    
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+/* Fin de sedes */
+
+/*Inicio media query tablet*/
+
+@media (min-width: 541px) and (max-width: 720px){
+
+    /* Comienzo de clases para textos y titulos */
+
+    .titulos{
+        font-size: 1.3rem;
+    }
+    
+    .textos{
+        font-size: 1rem;
+        font-family: 'Koulen', cursive;
+    }
+
+      /* Fin de clases para textos y titulos */
+    
+}
+
+/* Fin media query tablet */
+
+/*Inicio media query mobile*/
+
+@media (min-width: 320px) and (max-width: 540px){
+
+     /* Comienzo de clases para textos y titulos */
+
+    .titulos{
+        font-size: 1rem;
+    }
+    
+    .textos{
+        font-size: 1rem;
+    }     
+   
+    /* Fin de clases para textos y titulos */
+    
+    /*Inicio contacto*/
+    
+    .contacto__redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 320px;
+
+        .contacto__logosRedes{
+            max-width: 320px;
+        }
+    }
+
+
+    /* Fin contacto */
+
+}
+
+/* Fin media query mobile */
