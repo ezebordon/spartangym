@@ -5,17 +5,23 @@
   padding: 0px; }
 
 /*Comienzo de clases recicladas*/
-.textos {
+.botones {
+  display: flex;
+  transition: 500ms ease;
   padding: 2px;
+  font-size: 14px;
   margin: 2px;
-  font-family: 'Koulen', cursive; }
+  font-family: 'Oswald', sans-serif;
+  color: black; }
+  .botones:hover {
+    transform: scale(1.2); }
 
 .titulos {
   padding: 2px;
   margin: 2px;
   font-family: 'Koulen', cursive;
   font-size: 34px;
-  color: #c02a2a; }
+  color: black; }
 
 /*Fin de clases recicladas*/
 /* Estilo para todos los footer de la página */
@@ -42,9 +48,8 @@ footer {
   display: flex;
   transition: all 500ms ease;
   border-radius: 5px;
-  box-shadow: 1px 10px 15px rgba 0, 0, 0, 0.5; }
-  .sedes__animadas:hover {
-    transform: scale(1.2); }
+  box-shadow: 1px 10px 15px rgba 0, 0, 0, 0.5 .sedes__animadas hover;
+    box-shadow-transform: scale(1.2); }
 
 /* Fin de sedes */
 /*Inicio media query tablet*/

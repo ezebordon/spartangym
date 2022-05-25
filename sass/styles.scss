@@ -13,10 +13,21 @@
 /*Comienzo de clases recicladas*/
 
 
-.textos{
+
+
+.botones{
+    display: flex;
+    transition: 500ms ease;
     padding: 2px;
+    font-size: 14px;
     margin: 2px;
-    font-family: 'Koulen', cursive;
+    font-family: 'Oswald', sans-serif;
+    color: $color-de-titulos;
+    &:hover{
+        transform: scale(1.2);
+    }
+    
+    
 }
 
 .titulos{
@@ -66,9 +77,9 @@ footer{
     display: flex;
     transition: all 500ms ease;
     border-radius: 5px;
-    box-shadow: 1px 10px 15px rgba (0,0,0,0.50);
+    box-shadow: 1px 10px 15px rgba (0,0,0,0.50)
     
-    &:hover{
+    & hover{
         transform: scale(1.2);
     }
 }
