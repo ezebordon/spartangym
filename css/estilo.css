@@ -7,7 +7,7 @@
 /*Comienzo de clases recicladas*/
 .fondo {
   background: url(../recursos/fondo.svg);
-  background-size: 300px; }
+  background-size: 150px; }
 
 .botones {
   display: flex;
