@@ -1,7 +1,5 @@
 @import '_variables';
-
-
-
+@import 'mixin';
 
 /* Inicio del código con un reset */
 
@@ -12,7 +10,10 @@
 
 /*Comienzo de clases recicladas*/
 
-
+.fondo {
+    background: $fondo;
+    background-size: 300px;
+    }
 
 
 .botones{
@@ -21,8 +22,8 @@
     padding: 2px;
     font-size: 14px;
     margin: 2px;
-    font-family: 'Oswald', sans-serif;
-    color: $color-de-titulos;
+    font-family: 'Bakbak One', cursive;
+    color: $color-primario;
     &:hover{
         transform: scale(1.2);
     }
@@ -31,13 +32,14 @@
 }
 
 .titulos{
-    padding: 2px;
-    margin: 2px;
-    font-family:'Koulen', cursive;
-    font-size: 34px;
-    color: $color-de-titulos
-    
+    @include titulos ($color-primario, $color-terciario);        
 }
+
+.textos{
+    @include textos ($color-primario, $color-terciario);
+}
+
+
 
 /*Fin de clases recicladas*/
 
@@ -45,14 +47,20 @@
 
 footer{
     font-size: 15px;
-    color: $color-de-footer;
-    font-family: 'Permanent Marker', cursive;
+    color: $color-primario;
+    font-family: 'Bakbak One', cursive;
     display: flex;
     justify-content: center;
+    background-color: $color-terciario;   
 }
 
 /* Fin del estilo para el footer. */
 
+/* Inicio index */
+
+.titulos__index{
+    @include titulos ($color-secundario, $color-terciario);        
+}
 
 
 /* Inicio contato. */
@@ -68,6 +76,16 @@ footer{
     }
 }
 
+.contacto__form{
+    padding: 5px;
+    border: solid 2px white;
+    border-radius: 10px;
+    background: $fondo;
+    background-size: 300px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+    color: $color-secundario;
+}
 
 /* Fin de contacto*/
 
@@ -77,9 +95,8 @@ footer{
     display: flex;
     transition: all 500ms ease;
     border-radius: 5px;
-    box-shadow: 1px 10px 15px rgba (0,0,0,0.50)
-    
-    & hover{
+    box-shadow: 1px 10px 15px rgba (0,0,0,0.50);    
+    &:hover{
         transform: scale(1.2);
     }
 }
@@ -98,7 +115,7 @@ footer{
     
     .textos{
         font-size: 1rem;
-        font-family: 'Koulen', cursive;
+        font-family: 'IBM Plex Sans', sans-serif;
     }
 
       /* Fin de clases para textos y titulos */

@@ -1,0 +1,18 @@
+@import '_variables';
+
+@mixin titulos ($colorFuente, $colorFondo) {
+    color: $colorFuente;
+    background-color: $colorFondo;
+    padding: 2px;
+    margin: 2px;
+    font-family:'Bakbak One', cursive;
+    font-size: 34px;
+    border-radius: 3px;
+}
+
+@mixin textos ($colorLetras, $colorBackgroud) {
+    color: $colorLetras;
+    background-color: $colorBackgroud;
+    font-family: 'IBM Plex Sans', sans-serif;
+    border-radius: 3px;
+}
