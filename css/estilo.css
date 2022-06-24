@@ -6,7 +6,7 @@
 
 /*Comienzo de clases recicladas*/
 .fondo {
-  background: url(../recursos/fondo.svg);
+  background: #121212;
   background-size: 150px; }
 
 .botones {
@@ -59,7 +59,8 @@ footer {
 /* Inicio contato. */
 .contacto__redes {
   display: flex;
-  justify-content: space-around; }
+  justify-content: center;
+  flex-wrap: wrap; }
   .contacto__redes .contacto__logosRedes {
     padding: 10px;
     width: 100px;
@@ -69,23 +70,13 @@ footer {
   padding: 5px;
   border: solid 2px white;
   border-radius: 10px;
-  background: url(../recursos/fondo.svg);
+  background: #121212;
   background-size: 300px;
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 15px;
   color: white; }
 
 /* Fin de contacto*/
-/* Inicio sedes */
-.sedes__animadas {
-  display: flex;
-  transition: all 500ms ease;
-  border-radius: 5px;
-  box-shadow: 1px 10px 15px rgba 0, 0, 0, 0.5; }
-  .sedes__animadas:hover {
-    transform: scale(1.2); }
-
-/* Fin de sedes */
 /*Inicio media query tablet*/
 @media (min-width: 541px) and (max-width: 720px) {
   /* Comienzo de clases para textos y titulos */
@@ -94,7 +85,16 @@ footer {
   .textos {
     font-size: 1rem;
     font-family: 'IBM Plex Sans', sans-serif; }
-  /* Fin de clases para textos y titulos */ }
+  /* Fin de clases para textos y titulos */
+  /*Inicio contacto*/
+  .contacto__redes {
+    display: flex;
+    flex-direction: row;
+    max-width: 541px;
+    flex-wrap: wrap; }
+    .contacto__redes .contacto__logosRedes {
+      max-width: 541px; }
+  /* Fin contacto */ }
 
 /* Fin media query tablet */
 /*Inicio media query mobile*/
@@ -108,9 +108,9 @@ footer {
   /*Inicio contacto*/
   .contacto__redes {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 320px; }
+    flex-direction: row;
+    max-width: 320px;
+    flex-wrap: wrap; }
     .contacto__redes .contacto__logosRedes {
       max-width: 320px; }
   /* Fin contacto */ }

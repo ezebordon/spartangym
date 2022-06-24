@@ -67,7 +67,8 @@ footer{
 
 .contacto__redes{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
 
     .contacto__logosRedes{
         padding: 10px;
@@ -89,19 +90,7 @@ footer{
 
 /* Fin de contacto*/
 
-/* Inicio sedes */
 
-.sedes__animadas{
-    display: flex;
-    transition: all 500ms ease;
-    border-radius: 5px;
-    box-shadow: 1px 10px 15px rgba (0,0,0,0.50);    
-    &:hover{
-        transform: scale(1.2);
-    }
-}
-
-/* Fin de sedes */
 
 /*Inicio media query tablet*/
 
@@ -119,6 +108,22 @@ footer{
     }
 
       /* Fin de clases para textos y titulos */
+
+          /*Inicio contacto*/
+    
+    .contacto__redes{
+        display: flex;
+        flex-direction: row; 
+        max-width: 541px;
+        flex-wrap: wrap;
+
+        .contacto__logosRedes{
+            max-width: 541px;
+        }
+    }
+
+
+    /* Fin contacto */
     
 }
 
@@ -144,9 +149,9 @@ footer{
     
     .contacto__redes{
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row; 
         max-width: 320px;
+        flex-wrap: wrap;
 
         .contacto__logosRedes{
             max-width: 320px;
